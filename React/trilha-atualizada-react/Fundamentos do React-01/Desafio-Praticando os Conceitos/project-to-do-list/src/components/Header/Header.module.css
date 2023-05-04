@@ -1,0 +1,55 @@
+header {
+    height: 20rem;
+    background: var(--gray-700);
+    display: grid;
+    place-content: center;
+}
+
+form .inputTasks {
+    max-width: 73.6rem;
+    margin: calc(-5.4rem / 2) auto;
+    display: flex;
+    gap: .8rem;
+}
+
+form .inputTasks input {
+    width: 100%;
+    height: 5.4rem;
+    padding: 1.6rem;
+    border-radius: .8rem;
+    border: .1rem solid var(--gray-700);
+    background: var(--gray-500);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--gray-300);
+}
+
+form .inputTasks input:focus {
+    outline: 0.01rem solid var(--gray-700);
+}
+
+form .inputTasks button {
+    width: 9.0rem;
+    height: 5.2rem;
+    background: var(--blue-dark);
+    border-radius: .8rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border: none;
+    cursor: pointer;
+}
+
+form .inputTasks button span {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    form {
+        padding-inline: 1rem;
+    }
+}
