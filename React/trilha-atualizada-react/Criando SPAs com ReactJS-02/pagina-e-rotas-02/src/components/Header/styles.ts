@@ -25,7 +25,7 @@ export const HeaderContainer = styled.header`
       &:hover {
         border-bottom: 3px solid ${(props) => props.theme['green-500']};
       }
-      
+
       &.active {
         border-bottom: 3px solid ${(props) => props.theme['green-500']};
       }
