@@ -28,7 +28,6 @@ interface Cycle {
   id: string
   task: string
   minutesAmount: number
-  isActive: boolean
 }
 
 export function Home() {
@@ -50,7 +49,6 @@ export function Home() {
       id,
       task: data.task,
       minutesAmount: data.minutesAmount,
-      isActive: false,
     }
 
     setCycles((state) => [...state, newCycle])
