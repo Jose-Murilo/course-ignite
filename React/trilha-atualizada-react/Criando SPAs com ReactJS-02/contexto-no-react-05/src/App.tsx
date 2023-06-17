@@ -3,6 +3,7 @@ import { Router } from './Router'
 import { BrowserRouter } from 'react-router-dom'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
+import { CyclesContextProvider } from './contexts/CyclesContext'
 
 // Para explicação
 // import { ContextExample } from './ContextExample'
@@ -12,11 +13,13 @@ export function App() {
   // return <ContextExample />
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-      <GlobalStyle />
-    </ThemeProvider>
+    <CyclesContextProvider>
+      <ThemeProvider theme={defaultTheme}>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+        <GlobalStyle />
+      </ThemeProvider>
+    </CyclesContextProvider>
   )
 }
