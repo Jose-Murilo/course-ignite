@@ -18,11 +18,13 @@ export function createNewCycleAction(newCycle: Cycle) {
 export function interruptCycleAction() {
   return {
     type: ActionsTypes.INTERRUPT_CURRENT_CYCLE,
+    payload: {},
   }
 }
 
 export function markCurrentCycleAsFinishedAction() {
   return {
     type: ActionsTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
+    payload: {},
   }
 }
